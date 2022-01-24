@@ -1,0 +1,231 @@
+/* CSS for image slider starts here */
+
+.carousel-control-prev-icon {
+    background-color: rgba(5, 5, 5, 0.500);
+}
+
+.carousel-control-prev {
+    width: 5em;
+}
+
+.carousel-control-next-icon {
+    background-color: rgba(5, 5, 5, 0.500);
+}
+
+.carousel-control-next {
+    width: 5em;
+}
+
+/* CSS for image slider ends here */
+
+/* CSS for post caroucel starts here */
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0px;
+}
+
+.owl-carousel.owl-theme {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.item {
+    margin-left: 8px;
+}
+
+.silder-item-container {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.silder-item-container img {
+    width: 100%;
+    height: 270px;
+}
+
+.slider-buy-button {
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: white;
+}
+
+/* CSS for post caroucel ends here */
+
+/* CSS of 2 image hero section starts here*/
+.hero-container {
+    display: flex;
+    max-width: 1400px;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 3em;
+}
+
+.hero-left-container {
+    width: 45%;
+}
+
+.hero-left-container img {
+    width: 100%;
+}
+
+.hero-right-container {
+    width: 45%;
+}
+
+.hero-right-container img {
+    width: 100%;
+}
+
+.hero-heading {
+    font-family: "Poly Regular", "Times New Roman", serif;
+    font-size: 1.2em;
+    margin-top: 0.6em;
+}
+
+.hero-description {
+    font-size: 0.9em;
+}
+
+.video-container {
+    max-width: 1600px;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.video-container video {
+    width: 100%;
+}
+
+.about-container {
+    margin: auto;
+    text-align: center;
+    margin-top: 2em;
+    max-width: 1500px;
+}
+
+.about-heading {
+    font-family: "Poly Regular", "Times New Roman", serif;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.about-description {
+    font-size: 0.85em;
+}
+
+/* shop by category CSS starts here */
+
+.shop-category-container {
+    display: grid;
+    grid-gap: 20px;
+    max-width: 1300px;
+    grid-template-columns: repeat(4,23%);
+    grid-template-rows: repeat(2, 40px);
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.category-item {
+    border: 2px solid black;
+    padding-top: 5px;
+
+}
+.category-item:hover{
+    background-color: #E2E2E0;
+}
+
+.shop-by-category p {
+    font-family: "Poly Regular", "Times New Roman", serif;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    margin-top: 1em;
+
+}
+
+/* shop by category CSS starts here */
+
+/* shop by category CSS starts here */
+
+.brand-container {
+    display: grid;
+    max-width: 1300px;
+    grid-template-columns: repeat(6,15%);
+    grid-template-rows: repeat(1,103px);
+    margin: auto;
+    justify-content: center;
+    margin-top: 2em;
+    align-items: center;
+}
+
+.brand-container img {
+    padding-top: 5px;
+    width: 180px;
+    margin: auto;
+
+}
+.brand-showcase p {
+    font-family: "Poly Regular", "Times New Roman", serif;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+/* shop by category CSS starts here */
+
+
+@media only screen and (min-width:520px) and (max-width:1200px) {
+    .shop-category-container {
+        grid-template-columns: repeat(2, 45%);
+        grid-template-rows: repeat(4, 40px);
+    }
+    .brand-container {
+        grid-template-columns: repeat(3,30%);
+        grid-template-rows: repeat(2,103px);
+        max-width: 700px;
+    }
+    .brand-container img {
+        padding-top: 5px;
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width:520px) {
+    .hero-container {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero-right-container {
+        width: 95%;
+    }
+
+    .hero-left-container {
+        width: 95%;
+        margin-bottom: 1em;
+    }
+
+    .shop-category-container {
+        grid-template-columns: repeat(1, 90%);
+        grid-template-rows: repeat(8, 40px);
+    }
+    .brand-container {
+        grid-template-columns: repeat(2,45%);
+        grid-template-rows: repeat(3,103px);
+    }
+    .brand-container img {
+        padding-top: 5px;
+        width: 130px;
+    }
+}

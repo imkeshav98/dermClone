@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0px;
+}
+
+.cart-container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.cart-checkout-section {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.checkout-button {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    justify-content: center;
+    background-color: black;
+    margin-bottom: 1em;
+}
+
+.checkout-button>p {
+    color: white;
+    background-color: black;
+    max-height: 100%;
+}
+
+.checkout-button>img {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+#cart-table {
+    margin: auto;
+    border-top: 0.5px solid rgb(124, 124, 124);
+    border-bottom: 0.5px solid rgb(124, 124, 124);
+    width: 90%;
+    height: 3em;
+}
+
+.head-item {
+    width: 60%;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.head-price {
+    padding-top: 10px;
+}
+
+.head-quantity {
+    padding-top: 10px;
+}
+
+.head-subtotal {
+    padding-top: 10px;
+}
+
+.head-remove {
+    padding-top: 10px;
+    width: 5%
+}
+
+.cart-table-body {
+    width: 90%;
+    margin: auto;
+}
+
+td {
+    text-align: center;
+}
+
+.body-item-container {
+    display: flex;
+    align-items: center;
+}
+
+.body-item-container img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.body-quantity-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.checkout-button {
+    color: black;
+}
+
+.subtotal-row {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 5px;
+    border-bottom: 0.5px solid rgb(124, 124, 124);
+    align-items: center;
+}
+
+.cart-table-body tr td {
+    border-top: 0.5px solid rgb(124, 124, 124);
+}
+
+.cart-table-head tr {
+    background-color: rgb(241, 241, 241);
+}
+.apply-coupon {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.apply-coupon input{
+    width: 40%;
+    height: 40px;
+    border: 2px solid black;
+}
+.apply-coupon button{
+    width: 15%;
+    height: 40px;
+    background-color: black;
+    border: none;
+    color: white;
+    margin-left: 2px;
+    
+}
+#coupon_message {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width:550px) {
+    .subtotal-row {
+        flex-direction: column;
+        align-items:flex-start;
+    }
+    .body-item-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .apply-coupon {
+        flex-direction: column;
+    }
+    .apply-coupon input{
+        width: 80%;
+        height: 35px;
+        border: 2px solid black;
+    }
+    .apply-coupon button{
+        width: 80%;
+        height: 35px;
+        background-color: black;
+        border: none;
+        color: white;
+        margin-left: 0px;
+        margin-top: 2px;
+        
+    }
+}

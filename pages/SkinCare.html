@@ -1,0 +1,765 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/filteroptions.css">
+    <link rel="stylesheet" href="../css/product_container.css">
+
+    <title>Men's Skincare & Grooming Products | Dermstore</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="space-above-nav"></div>
+    <!-------- Navigation Bar Starts Here ------------->
+    <nav class="navigation">
+        <div class="nav-container">
+            <div class="main-nav">
+                <img src="https://i.postimg.cc/nc4J56hc/dermstore-logo.png" alt="dermstore_logo" class="logo-icon"
+                    onclick="location.href='../index.html';">
+                <div class="nav-search">
+                    <img src="https://i.postimg.cc/5NQBNjyb/menu.png" alt="menu" class="mobile-menu">
+                    <input type="text" class="search-container" placeholder="Search for a product or brand..">
+                    <img src="https://i.postimg.cc/90c6jfMm/search-interface-symbol.png" alt="search icon"
+                        class="search-icon">
+                    <img src="https://i.postimg.cc/90c6jfMm/search-interface-symbol.png" alt="search icon"
+                        class="mobile-search-icon">
+                    <img src="https://i.postimg.cc/Lgdct409/close.png" alt="close button" class="search-close-button">
+                </div>
+                <img src="https://i.postimg.cc/nc4J56hc/dermstore-logo.png" alt="dermstore_logo"
+                    class="mobile-logo-icon" onclick="location.href='../index.html';">
+                <div class="account-cart">
+                    <div class="nav_account">
+                        <img src="https://i.postimg.cc/wjtLkcVz/user.png" alt="account-icon" class="account-icon"
+                            onclick="location.href='./pages/login.html';">
+                        <p onclick="location.href='./pages/login.html';">Account</p>
+                    </div>
+                    <div class="nav_cart" onclick="location.href='Cart.html';">
+                        <img src="https://i.postimg.cc/sXBgkwMf/bag.png" alt="cart_icon" class="cart-icon">
+                        <div id="cart-item-counter">0</div>
+                        <p>Cart</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-menu">
+                <ul>
+                    <li onclick="location.href='brands.html';">Brands</li>
+                    <li onclick="location.href='Bestsellers.html';">Bestsellers</li>
+                    <li onclick="location.href='SkinCare.html';">Skin Care</li>
+                    <li onclick="location.href='Makeup.html';">Makeup</li>
+                    <li onclick="location.href='Hair_Care.html';">Hair Care</li>
+                    <li onclick="location.href='Bath_Body.html';">Bath & Body</li>
+                    <li onclick="location.href='Men.html';">Men</li>
+                    <li onclick="location.href='Gifts_Sets.html';">Gifts & Sets</li>
+                    <li onclick="location.href='Hair_Care.html';">BeautyFIX</li>
+                    <li onclick="location.href='Sale.html';">Sale</li>
+                    <li onclick="location.href='SkinCare.html';">Skin 101</li>
+                </ul>
+            </div>
+
+            <div class="main-mobile-search-container">
+                <div class="mobile-search-container">
+                    <input type="text" class="mobile-search-input" placeholder="Search for a product or brand..">
+                    <img src="https://i.postimg.cc/90c6jfMm/search-interface-symbol.png" alt="search icon"
+                        class="mobile-search-button">
+                </div>
+            </div>
+            <div class="mobile-nav-menu">
+                <div class="home-close-buttons">
+                    <img src="https://i.postimg.cc/QHJ273gD/home-button.png" alt="home button"
+                        class="mobile-home-button">
+                    <img src="https://i.postimg.cc/Lgdct409/close.png" alt="close button" class="mobile-close-button">
+                </div>
+                <ul>
+                    <li onclick="location.href='Bestsellers.html';">Bestsellers</li>
+                    <li onclick="location.href='SkinCare.html';">Skin Care</li>
+                    <li onclick="location.href='Makeup.html';">Makeup</li>
+                    <li onclick="location.href='Hair_Care.html';">Hair Care</li>
+                    <li onclick="location.href='Bath_Body.html';">Bath & Body</li>
+                    <li onclick="location.href='Men.html';">Men</li>
+                    <li onclick="location.href='Gifts_Sets.html';">Gifts & Sets</li>
+                    <li onclick="location.href='SkinCare.html';">BeautyFIX</li>
+                    <li onclick="location.href='Sale.html';">Sale</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- -----------Navigation Bar Ends Here--------------->
+    <!--------------below nav 2 rows sections starts here-->
+    <div class="below-nav-two-rows">
+        <div class="upper_div">
+            <img style="margin-left: 0px;" src="https://cdn-icons-png.flaticon.com/128/664/664468.png">
+            <p>FREE US Shiping Over $50</p>
+            <img src="https://cdn-icons-png.flaticon.com/128/35/35404.png">
+            <p>New costomer save 15% with code WELCOME15</p>
+            <img src="https://cdn-icons-png.flaticon.com/128/4221/4221657.png">
+            <p>Redeem Dermstore Reward</p>
+            <img src="https://cdn-icons-png.flaticon.com/128/2089/2089713.png">
+            <p>Pay in 4 With klarna</p>
+        </div>
+        <div class="upper_div2" onclick="location.href='SkinCare.html';">
+            Limited Edition SkinCeuticals bundles are here! SHOP NOW.
+        </div>
+    </div>
+    <!--------------below nav 2 rows sections ends here-->
+
+    <p id="breadcrum">Home / Skin Care</p>
+
+
+
+    <!--------------------------- left side filter ----------------------------------------->
+
+    <div id="pdct_body">
+        <div id="col1">
+            <div class=" left_div">
+                <p id="refine">Refine</p>
+
+
+                <p id="filter_title">Brand
+                    <p>
+                        <div class="left_inside_div">
+                            <div> <input type="checkbox" class="ckeckbox1">
+                                <p>111SKIN (1)</p>
+                            </div>
+                            <div><input type="checkbox" ;>
+                                <p>Shiseido (2) </p>
+                            </div>
+                            <div><input type="checkbox" ;>
+                                <p>Anthony (6)</p>
+                            </div>
+                            <div> <input type="checkbox" ;>
+                                <p>Briogeo (1)</p>
+                            </div>
+                            <div> <input type="checkbox" ;>
+                                <p>Patricks (13)</p>
+                            </div>
+                            <div> <input type="checkbox" ;>
+                                <p>Caudalie (1)</p>
+                            </div>
+                            <div> <input type="checkbox" ;>
+                                <p>ClarityRx (1)</p>
+                            </div>
+                        </div>
+
+                        <p id="filter_title">Skincare Product Type
+                            <p>
+
+                                <div class="left_inside_div">
+                                    <div> <input type="checkbox" class="ckeckbox1">
+                                        <p>Cleansers (14)</p>
+                                    </div>
+                                    <div><input type="checkbox" ;>
+                                        <p>Moisturizers (14) </p>
+                                    </div>
+                                    <div><input type="checkbox" ;>
+                                        <p>Moisturizers (14)</p>
+                                    </div>
+                                    <div> <input type="checkbox" ;>
+                                        <p>Exfoliators & Scrubs (8)</p>
+                                    </div>
+                                    <div> <input type="checkbox" ;>
+                                        <p>Serums (8)</p>
+                                    </div>
+                                    <div> <input type="checkbox" ;>
+                                        <p>Eye Care (7)</p>
+                                    </div>
+                                    <div> <input type="checkbox" ;>
+                                        <p>Masks (2)</p>
+                                    </div>
+                                </div>
+
+                                <p id="filter_title">Skin Type
+                                    <p>
+
+                                        <div class="left_inside_div">
+                                            <div> <input type="checkbox" class="ckeckbox1">
+                                                <p>Combination (67)</p>
+                                            </div>
+                                            <div><input type="checkbox" ;>
+                                                <p>Dry (67)</p>
+                                            </div>
+                                            <div><input type="checkbox" ;>
+                                                <p>Mature (67)</p>
+                                            </div>
+                                            <div> <input type="checkbox" ;>
+                                                <p>Normal (72)</p>
+                                            </div>
+                                            <div> <input type="checkbox" ;>
+                                                <p>Oily (66)</p>
+                                            </div>
+                                            <div> <input type="checkbox" ;>
+                                                <p>Sensitive (65)</p>
+                                            </div>
+                                            <div> <input type="checkbox" ;>
+                                                <p>Mature (67)</p>
+                                            </div>
+                                        </div>
+
+                                        <p id="filter_title">Skincare Concern
+                                            <p>
+
+                                                <div class="left_inside_div">
+                                                    <div> <input type="checkbox" class="ckeckbox1">
+                                                        <p>Acne (68)</p>
+                                                    </div>
+                                                    <div><input type="checkbox" ;>
+                                                        <p>Pigmentation (10)</p>
+                                                    </div>
+                                                    <div><input type="checkbox" ;>
+                                                        <p>Fine Lines & Wrinkles (5)</p>
+                                                    </div>
+                                                    <div> <input type="checkbox" ;>
+                                                        <p>Dehydration (2)</p>
+                                                    </div>
+                                                    <div> <input type="checkbox" ;>
+                                                        <p>Dullness (2)</p>
+                                                    </div>
+                                                    <div> <input type="checkbox" ;>
+                                                        <p>Blemishes (1)</p>
+                                                    </div>
+                                                    <div> <input type="checkbox" ;>
+                                                        <p>Dark Circles & Puffiness (1)</p>
+                                                    </div>
+                                                </div>
+
+                                                <p id="filter_title">Hair Type
+                                                    <p>
+
+                                                        <div class="left_inside_div">
+                                                            <div> <input type="checkbox" class="ckeckbox1">
+                                                                <p>Afro-Caribbean (1)</p>
+                                                            </div>
+                                                            <div><input type="checkbox" ;>
+                                                                <p>Braided (1) </p>
+                                                            </div>
+                                                            <div><input type="checkbox" ;>
+                                                                <p>Colored (21)</p>
+                                                            </div>
+                                                            <div> <input type="checkbox" ;>
+                                                                <p>Curly & Wavy (24)</p>
+                                                            </div>
+                                                            <div> <input type="checkbox" ;>
+                                                                <p>Dry (24)</p>
+                                                            </div>
+                                                            <div> <input type="checkbox" ;>
+                                                                <p>Fine (27)</p>
+                                                            </div>
+                                                            <div> <input type="checkbox" ;>
+                                                                <p>Normal (30)</p>
+                                                            </div>
+                                                        </div>
+                                                        <p id="filter_title">Bath & Body Category
+                                                            <p>
+
+                                                                <div class="left_inside_div">
+                                                                    <div> <input type="checkbox" class="ckeckbox1">
+                                                                        <p>Bath & Shower (22)</p>
+                                                                    </div>
+                                                                    <div><input type="checkbox" ;>
+                                                                        <p>Hair Removal (15) </p>
+                                                                    </div>
+                                                                    <div><input type="checkbox" ;>
+                                                                        <p>Skin Health (14)</p>
+                                                                    </div>
+                                                                    <div> <input type="checkbox" ;>
+                                                                        <p>Hygiene & Health (10)</p>
+                                                                    </div>
+                                                                    <div> <input type="checkbox" ;>
+                                                                        <p>Sun Care (5)</p>
+                                                                    </div>
+                                                                    <div> <input type="checkbox" ;>
+                                                                        <p>Sunless Tanning (1)</p>
+                                                                    </div>
+                                                                    <div> <input type="checkbox" ;>
+                                                                        <p>Tools (Non-Electrical) (1)</p>
+                                                                    </div>
+                                                                </div>
+                                                                <p id="filter_title">Key Ingredients
+                                                                    <p>
+
+
+                                                                        <div class="left_inside_div">
+                                                                            <div> <input type="checkbox"
+                                                                                    class="ckeckbox1">
+                                                                                <p>Algae Extract (2)</p>
+                                                                            </div>
+                                                                            <div><input type="checkbox" ;>
+                                                                                <p>Aloe Vera (25)</p>
+                                                                            </div>
+                                                                            <div><input type="checkbox" ;>
+                                                                                <p>Alpha Hydroxy Acids (2)</p>
+                                                                            </div>
+                                                                            <div> <input type="checkbox" ;>
+                                                                                <p>Amino Acids (11)</p>
+                                                                            </div>
+                                                                            <div> <input type="checkbox" ;>
+                                                                                <p>Antioxidants (51)</p>
+                                                                            </div>
+                                                                            <div> <input type="checkbox" ;>
+                                                                                <p>Beeswax (6)</p>
+                                                                            </div>
+                                                                            <div> <input type="checkbox" ;>
+                                                                                <p>Ceramides (2)</p>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <p id="filter_title">Preferences
+                                                                            <p>
+
+                                                                                <div class="left_inside_div">
+                                                                                    <div> <input type="checkbox"
+                                                                                            class="ckeckbox1">
+                                                                                        <p>Certified Cruelty-Free (66)
+                                                                                        </p>
+                                                                                    </div>
+                                                                                    <div><input type="checkbox" ;>
+                                                                                        <p>Certified Organic (6)</p>
+                                                                                    </div>
+                                                                                    <div><input type="checkbox" ;>
+                                                                                        <p>Fragrance-Free (18)</p>
+                                                                                    </div>
+                                                                                    <div> <input type="checkbox" ;>
+                                                                                        <p>Gluten-Free (18)</p>
+                                                                                    </div>
+                                                                                    <div> <input type="checkbox" ;>
+                                                                                        <p>Hypoallergenic (1)</p>
+                                                                                    </div>
+                                                                                    <div> <input type="checkbox" ;>
+                                                                                        <p>Non-Comedogenic (9)</p>
+                                                                                    </div>
+                                                                                    <div> <input type="checkbox" ;>
+                                                                                        <p>Paraben-Free (51)</p>
+                                                                                    </div>
+                                                                                </div>
+
+
+            </div>
+        </div>
+        <!-- -----------------------------left side filter ends----------------------- -->
+
+
+        <!-- ----------------------------product container starts here-------------------- -->
+        <div id="col2">
+
+            <div class="text_div">
+                <div id="pg_title">Skin Care</div>
+                <div id="pdct_count">18 results</div>
+
+                <div id="page_detail">
+                    <p>At Dermstore, we feature a highly curated collection of skin care products and sets. You'll find
+                        professional-strength formulas from top skin care brands, historically only available at a
+                        dermatologist's office, and specialty brands from around the world. From acne treatments to
+                        natural and anti-aging skin care, whether you're concerned with prevention or in search of an
+                        effective solution for a specific issue, you'll find everything you need in our collection.
+                        Browse products formulated with the most effective skin care ingredients including vitamins C
+                        and E and retinol and explore the industry's leading brands, including SkinCeuticals,
+                        SkinMedica, EltaMD, Obagi and Eminence Organic Skin Care. </p>
+                </div>
+                <div id="filter_option">
+                    <div>
+                        <p>Sort By</p>
+                    </div>
+                    <div class="short_div">
+                        <select id="short">
+                            <option value='1' selected>Default</option>
+                            <option value='2'>Bestseller</option>
+                            <option value='3'>Price:high to low</option>
+                            <option value='4'>Price:low to high</option>
+                            <option value='5'>A-Z</option>
+                            <option value='6'>Z-A</option>
+                        </select>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------right side product ends here------------------- -->
+    <!-------------footer section starts here------------>
+    <footer>
+        <div class="upper-footer-section">
+            <div class="newsletter">
+                <p>Sign up to our newsletters and receive the latest exclusive discounts and deals</p>
+                <button>SIGN ME UP</button>
+            </div>
+            <div class="social">
+                <p>Connect with us</p>
+                <div class="social-icons">
+                    <img src="https://i.postimg.cc/bSHcgqd7/facebook-logo.png" alt="facebook">
+                    <img src="https://i.postimg.cc/Btx04BNm/twitter.png" alt="twitter">
+                    <img src="https://i.postimg.cc/ppRtT56R/instagram.png" alt="instagram">
+                    <img src="https://i.postimg.cc/kRdPW2MN/youtube.png" alt="youtube">
+                    <img src="https://i.postimg.cc/7GzyC34Y/pinterest.png" alt="pinterest">
+                </div>
+            </div>
+        </div>
+        <div class="middle-footer-section">
+            <div class="customer-service">
+                <ul>
+                    <li>Customer Service</li>
+                    <li>Help Center / FAQs</li>
+                    <li>Returns</li>
+                    <li>Shipping Information</li>
+                    <li>Order Status</li>
+                </ul>
+            </div>
+            <div class="my-account">
+                <ul>
+                    <li>My Account</li>
+                    <li>Manage My Subscriptions</li>
+                    <li>My Rewards</li>
+                    <li>My Favorites</li>
+                    <li>Referrals</li>
+                    <li>Order History</li>
+                </ul>
+            </div>
+            <div class="company">
+                <ul>
+                    <li>Company</li>
+                    <li>About us</li>
+                    <li>Press</li>
+                    <li>What is Klarna?</li>
+                </ul>
+            </div>
+            <div class="legal">
+                <ul>
+                    <li>Legal</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                    <li>Modern Slavery Statement</li>
+                    <li>Product Recall</li>
+                    <li>Accessibility</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-end-section">
+            <h1>THG</h1>
+            <P>2022 © The Hut.com Ltd.</P>
+        </div>
+    </footer>
+    <!-------------footer section ends here------------>
+
+</body>
+
+
+<script>
+    function sort_by_name(data_skin_care) {
+        for (i = 0; i < data_skin_care.length; i++) {
+            for (j = 0; j < data_skin_care.length - i - 1; j++) {
+                str1 = data_skin_care[j].product_name
+                str2 = data_skin_care[j + 1].product_name
+                if (str1 > str2) {
+                    temp = data_skin_care[j]
+                    data_skin_care[j] = data_skin_care[j + 1]
+                    data_skin_care[j + 1] = temp
+                }
+            }
+        }
+        return data_skin_care;
+    }
+
+    function sort_by_namerev(data_skin_care) {
+        for (i = 0; i < data_skin_care.length; i++) {
+            for (j = 0; j < data_skin_care.length - i - 1; j++) {
+                str1 = data_skin_care[j].product_name
+                str2 = data_skin_care[j + 1].product_name
+                if (str1 < str2) {
+                    temp = data_skin_care[j]
+                    data_skin_care[j] = data_skin_care[j + 1]
+                    data_skin_care[j + 1] = temp
+                }
+            }
+        }
+        return data_skin_care;
+    }
+
+    function mapping_data(data_skin_care) {
+        data_skin_care.map(function (elm) {
+            var div = document.createElement("div");
+            div.setAttribute("class", "product_div");
+            var image = document.createElement("img");
+            image.setAttribute("src", elm.image);
+            image.setAttribute("width", "100%");
+            image.setAttribute("height", "70%");
+            var name = document.createElement("p")
+            name.textContent = elm.product_name;
+            var rating = document.createElement("p")
+            rating.textContent = elm.rating + " " + elm.review;
+
+            rating.setAttribute("class", "bold")
+
+            var price = document.createElement("p")
+            price.textContent = "$" + elm.price;
+            price.setAttribute("id", "price");
+            price.setAttribute("class", "bold")
+
+            id_value = elm.product_name
+            var btn = document.createElement("button");
+            btn.textContent = "QUICK BUY";
+            btn.setAttribute("id", id_value);
+            btn.addEventListener("click", add_to_cart);
+
+            div.append(image, name, rating, price, btn);
+            document.querySelector(".container").append(div);
+        })
+    }
+
+    function sortPrice() {
+
+        var selected = document.querySelector("#short").value;
+        document.querySelector(".container").textContent = "";
+        if (selected == "1") {
+            data_skin_care.sort(function (a, b) {
+                return a.product_id - b.product_id;
+            });
+        } else if (selected == "2") {
+            data_skin_care.sort(function (a, b) {
+                return b.review - a.review;
+            });
+        } else if (selected == "3") {
+            data_skin_care.sort(function (a, b) {
+                return b.price - a.price;
+            });
+        } else if (selected == "4") {
+            data_skin_care.sort(function (a, b) {
+                return a.price - b.price;
+            });
+        } else if (selected == "5") {
+            data_skin_care = sort_by_name(data_skin_care)
+        } else if (selected == "6") {
+            data_skin_care = sort_by_namerev(data_skin_care)
+        }
+
+        mapping_data(data_skin_care)
+    }
+</script>
+
+<script>
+    var selected = document.querySelector("#short").value;
+
+    data_skin_care = [{
+            product_name: "SkinCeuticals C E Ferulic (1 fl. oz.)",
+            image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289609-1174892770940184.jpg",
+            rating: "★★★★☆",
+            review: 4098,
+            price: 166,
+            category: "skin_care"
+        },
+        {
+            product_name: "EltaMD UV Clear Broad-Spectrum SPF 46 (1.7 oz.)",
+            image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370303-1394876993507764.jpg",
+            rating: "★★★★☆",
+            review: 4134,
+            price: 37,
+            category: "skin_care"
+        },
+        {
+            product_name: "SkinCeuticals Triple Lipid Restore 242 (1.6 fl. oz.)",
+            image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11290635-1804892767902966.jpg",
+            rating: "★★★★☆",
+            review: 1498,
+            price: 130,
+            category: "skin_care"
+        },
+        {
+            product_name: "SkinMedica TNS Advanced+ Serum (1 oz.)",
+            image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12596429-3594871019700125.jpg",
+            rating: "★★★★☆",
+            review: 184,
+            price: 295,
+            category: "skin_care"
+        },
+        {
+            product_name: "Colorescience Total Eye™ 3-in-1 Renewal Therapy SPF 35 (0.23 fl. oz.)",
+            image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12666791-4044866391045062.jpg",
+            rating: "★★★★☆",
+            review: 393,
+            price: 74,
+            category: "skin_care"
+        },
+        {
+            product_name: "SkinCeuticals Hyaluronic Acid Intensifier (1 fl. oz.)",
+            image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11395385-5474911401472936.jpg",
+            rating: "★★★★☆",
+            review: 997,
+            price: 102,
+            category: "skin_care"
+        },
+        {
+            product_name: "SkinMedica Lytera 2.0 Pigment Correcting Serum (2 oz.)",
+            image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11396212-1194870995675144.jpg",
+            rating: "★★★★☆",
+            review: 265,
+            price: 154,
+            category: "skin_care"
+        },
+        {
+            product_name: "Obagi Medical Professional-C Serum 20% (1 fl. oz.)",
+            image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11291543-1414871574706341.jpg",
+            rating: "★★★★☆",
+            review: 827,
+            price: 136,
+            category: "skin_care"
+        },
+        {
+            product_name: "FOREO LUNA 3 for Sensitive Skin (1 piece)",
+            image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12194387-1294872095890587.jpg",
+            rating: "★★★★☆",
+            review: 20,
+            price: 199,
+            category: "skin_care"
+        },
+        {
+            product_name: "EltaMD UV Clear Broad-Spectrum SPF 46 - Tinted (1.7 oz.)",
+            image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370312-2034866342257028.jpg",
+            rating: "★★★★☆",
+            review: 1066,
+            price: 39,
+            category: "skin_care"
+        },
+        {
+            product_name: "iS Clinical Active Serum (1 fl. oz.)",
+            image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11291956-2074871578544985.jpg",
+            rating: "★★★★☆",
+            review: 413,
+            price: 142,
+            category: "skin_care"
+        },
+        {
+            product_name: "SkinCeuticals Discoloration Defense (1 fl. oz.)",
+            image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11679046-1554892769100800.jpg",
+            rating: "★★★★☆",
+            review: 378,
+            price: 98,
+            category: "skin_care"
+        },
+        {
+            product_name: "EltaMD UV Elements Tinted Broad-Spectrum SPF 44 (2 oz.)",
+            image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370314-2054866342338376.jpg",
+            rating: "★★★★☆",
+            review: 800,
+            price: 36,
+            category: "skin_care"
+        },
+        {
+            product_name: "SkinMedica TNS Essential Serum (1 oz.)",
+            image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289682-1284871019539829.jpg",
+            rating: "★★★★☆",
+            review: 575,
+            price: 281,
+            category: "skin_care"
+        },
+        {
+            product_name: "iS Clinical Pro-Heal Serum Advance Plus (1 fl. oz.)",
+            image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11291965-1894871578716777.jpg",
+            rating: "★★★★☆",
+            review: 280,
+            price: 158,
+            category: "skin_care"
+        },
+        {
+            product_name: "SkinCeuticals Resveratrol B E (1 fl. oz.)",
+            image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289635-1424892772796680.jpg",
+            rating: "★★★★☆",
+            review: 265,
+            price: 153,
+            category: "skin_care"
+        },
+        {
+            product_name: "Neocutis LUMIÈRE® FIRM RICHE Extra Moisturizing Illuminating Tightening Eye Cream (0.5 fl. oz.)",
+            image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12664555-1704871739992403.jpg",
+            rating: "★★★★☆",
+            review: 53,
+            price: 118,
+            category: "skin_care"
+        },
+        {
+            product_name: "Sunday Riley GOOD GENES All-In-One Lactic Acid Treatment (1.7 oz. - $175 Value)",
+            image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11588281-8764882139037003.jpg",
+            rating: "★★★★☆",
+            review: 632,
+            price: 122,
+            category: "skin_care"
+        }
+
+    ]
+    mapping_data(data_skin_care)
+    document.querySelector('#short').addEventListener('change', sortPrice)
+    var cart_data = JSON.parse(localStorage.getItem('Cart')) || []
+
+    //add to cart fuction starts here
+    function add_to_cart(event) {
+        var cart_data = JSON.parse(localStorage.getItem('Cart')) || []
+
+        var productName = event.target.id;
+        var length = cart_data.length;
+        var match = false;
+        for (var i = 0; i < length; i++) {
+            if (cart_data[i].product_name == productName) {
+                cart_data[i].qty++;
+                var match = true;
+                break;
+            }
+        }
+        if (!match) {
+            var obj = {};
+            var previousSibling = event.target.previousElementSibling;
+
+            obj['price'] = previousSibling.textContent.slice(1) * 1;
+            var previousSibling = previousSibling.previousElementSibling;
+            var previousSibling = previousSibling.previousElementSibling;
+            obj['product_name'] = previousSibling.textContent;
+            var previousSibling = previousSibling.previousElementSibling;
+            obj['image'] = previousSibling.src;
+            obj['qty'] = 1;
+            cart_data.push(obj);
+        }
+        console.log(typeof (event.target.previousElementSibling.textContent.slice(1) * 1), obj)
+        localStorage.setItem('Cart', JSON.stringify(cart_data));
+    }
+    // Add to cart fuction ends here
+</script>
+
+
+<script type="text/javascript" src="../js/navbar.js"></script>
+
+</html>
+<script>
+    document.querySelectorAll('.some-class').forEach(item => {
+        item.addEventListener('click', event => {
+            //handle click
+        })
+    })
+
+    ////apen product details page.........
+    var x = document.querySelectorAll(".product_div >img,.product_div >p");
+    x.forEach(function (item) {
+        item.addEventListener('click', openProduct);
+    });
+
+    function openProduct(elem) {
+        var obj = {};
+        var product = elem.target.parentNode.firstElementChild;
+
+        obj['img'] = product.src;
+        product = product.nextElementSibling;
+        obj['name'] = product.textContent;
+        product = product.nextElementSibling;
+        obj['ratings'] = product.textContent;
+        product = product.nextElementSibling;
+        obj['price'] = product.textContent;
+        localStorage.setItem('product', JSON.stringify(obj));
+
+        window.location.href = "product_description_page.html"
+
+    }
+    ////apen product details page.........
+</script>

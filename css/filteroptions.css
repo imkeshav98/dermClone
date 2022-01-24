@@ -1,0 +1,72 @@
+
+.left_div {
+    width:300px;
+    margin-left: 20px;
+}
+
+.left_div>#refine {
+    font-family: "lato regular",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    height: 45px;
+    width: 300px;
+    font-weight: 700;
+    border-bottom: 1px solid lightgray;
+}
+
+.left_div>button {
+    font-weight: 700;
+    font-family: "lato regular",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.left_inside_div>div>p {
+    margin-left: 10px;
+    font-weight: 500;
+    font-family: "lato regular",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    margin-bottom: 2px;
+    text-decoration: underline;
+
+}
+
+#filter_title {
+    height: 60px;
+    font-weight: 700;
+    font-family: "lato regular",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    border-bottom: 1px solid lightgray;
+    padding-top: 10%;
+
+
+}
+
+
+
+.left_inside_div {
+    height: 140px;
+    width: 300px;
+    /* margin-bottom: 40px; */
+    overflow-y: scroll;
+}
+
+.left_inside_div>div {
+    display: flex;
+    height: 30px;
+    margin-top: 2%;
+}
+
+.left_inside_div>div>input {
+    height: 18px;
+    width: 18px;
+    margin: 0%;
+}
+/* 
+.left_inside_div>div>p {
+    text-decoration: underline;
+    font-size: 16px;
+    border: 1px solid red;
+
+} */

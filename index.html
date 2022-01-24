@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Linking CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/slider.css">
+
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="space-above-nav"></div>
+    <!-------- Navigation Bar Starts Here ------------->
+    <nav class="navigation">
+        <div class="nav-container">
+            <div class="main-nav">
+                <img src="https://i.postimg.cc/nc4J56hc/dermstore-logo.png" alt="dermstore_logo" class="logo-icon"
+                    onclick="location.href='./index.html';">
+                <div class="nav-search">
+                    <img src="https://i.postimg.cc/5NQBNjyb/menu.png" alt="menu" class="mobile-menu">
+                    <input type="text" class="search-container" placeholder="Search for a product or brand..">
+                    <img src="https://i.postimg.cc/90c6jfMm/search-interface-symbol.png" alt="search icon"
+                        class="search-icon">
+                    <img src="https://i.postimg.cc/90c6jfMm/search-interface-symbol.png" alt="search icon"
+                        class="mobile-search-icon">
+                    <img src="https://i.postimg.cc/Lgdct409/close.png" alt="close button" class="search-close-button">
+                </div>
+                <img src="https://i.postimg.cc/nc4J56hc/dermstore-logo.png" alt="dermstore_logo"
+                    class="mobile-logo-icon" onclick="location.href='./index.html';">
+                <div class="account-cart">
+                    <div class="nav_account">
+                        <img src="https://i.postimg.cc/wjtLkcVz/user.png" alt="account-icon" class="account-icon"
+                            onclick="location.href='./pages/login.html';">
+                        <p onclick="location.href='./pages/login.html';">Account</p>
+                    </div>
+                    <div class="nav_cart" onclick="location.href='./pages/Cart.html';">
+                        <img src="https://i.postimg.cc/sXBgkwMf/bag.png" alt="cart_icon" class="cart-icon">
+                        <div id="cart-item-counter"></div>
+                        <p>Cart</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-menu">
+                <ul>
+                    <li onclick="location.href='./pages/brands.html';">Brands</li>
+                    <li onclick="location.href='./pages/Bestsellers.html';">Bestsellers</li>
+                    <li onclick="location.href='./pages/SkinCare.html';">Skin Care</li>
+                    <li onclick="location.href='./pages/Makeup.html';">Makeup</li>
+                    <li onclick="location.href='./pages/Hair_Care.html';">Hair Care</li>
+                    <li onclick="location.href='./pages/Bath_Body.html';">Bath & Body</li>
+                    <li onclick="location.href='./pages/Men.html';">Men</li>
+                    <li onclick="location.href='./pages/Gifts_Sets.html';">Gifts & Sets</li>
+                    <li onclick="location.href='./pages/Hair_Care.html';">BeautyFIX</li>
+                    <li onclick="location.href='./pages/Sale.html';">Sale</li>
+                    <li onclick="location.href='./pages/SkinCare.html';">Skin 101</li>
+                </ul>
+            </div>
+
+            <div class="main-mobile-search-container">
+                <div class="mobile-search-container">
+                    <input type="text" class="mobile-search-input" placeholder="Search for a product or brand..">
+                    <img src="https://i.postimg.cc/90c6jfMm/search-interface-symbol.png" alt="search icon"
+                        class="mobile-search-button">
+                </div>
+            </div>
+            <div class="mobile-nav-menu">
+                <div class="home-close-buttons">
+                    <img src="https://i.postimg.cc/QHJ273gD/home-button.png" alt="home button"
+                        class="mobile-home-button">
+                    <img src="https://i.postimg.cc/Lgdct409/close.png" alt="close button" class="mobile-close-button">
+                </div>
+                <ul>
+                    <li onclick="location.href='./pages/Bestsellers.html';">Bestsellers</li>
+                    <li onclick="location.href='./pages/SkinCare.html';">Skin Care</li>
+                    <li onclick="location.href='./pages/Makeup.html';">Makeup</li>
+                    <li onclick="location.href='./pages/Hair_Care.html';">Hair Care</li>
+                    <li onclick="location.href='./pages/Bath_Body.html';">Bath & Body</li>
+                    <li onclick="location.href='./pages/Men.html';">Men</li>
+                    <li onclick="location.href='./pages/Gifts_Sets .html';">Gifts & Sets</li>
+                    <li onclick="location.href='./pages/BeautyFIX.html';">BeautyFIX</li>
+                    <li onclick="location.href='./pages/Sale.html';">Sale</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- -----------Navigation Bar Ends Here--------------->
+    <!--------------below nav 2 rows sections starts here-->
+    <div class="below-nav-two-rows">
+        <div class="upper_div">
+            <img style="margin-left: 0px;" src="https://cdn-icons-png.flaticon.com/128/664/664468.png">
+            <p>FREE US Shiping Over $50</p>
+            <img src="https://www.instantel.com/sites/instantel.com/files/2020-05/247-icon.svg">
+            <p>New costomer save 15% with code WELCOME15</p>
+            <img src="https://cdn-icons-png.flaticon.com/128/4221/4221657.png">
+            <p>Redeem Dermstore Reward</p>
+            <img src="https://cdn-icons-png.flaticon.com/128/2089/2089713.png">
+            <p>Pay in 4 With klarna</p>
+        </div>
+        <div class="upper_div2" onclick="location.href='./pages/SkinCare.html';">
+            Limited Edition SkinCeuticals bundles are here! SHOP NOW.
+        </div>
+    </div>
+    <!--------------below nav 2 rows sections ends here-->
+
+    <!--------------Image slider 1 section starts here--->
+    <section class="top-image-slider">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://static.thcdn.com/images/xlarge/webp/widgets/208-us/31/HomepageBannerWeek3-4-061731.jpg"
+                        class="d-block w-100 item-one" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://static.thcdn.com/images/xlarge/webp/widgets/208-us/59/HomepageBannerEdit-084959.jpg"
+                        class="d-block w-100 item-two" alt="...">
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!--------------Image slider 1 section ends here----->
+
+    <!--------------Post caroucel starts here------------>
+    <section class="best-seller-post-slider">
+        <p style="text-align: center; margin: 1em; font-size: 1.5em; font-family:Poly Regular,Times New Roman,serif;">
+            Best Sellers</p>
+        <div class="container1"></div>
+    </section>
+    <!--------------Post caroucel ends here-------------->
+
+    <!---------- 2 image hero section starts here-------->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-left-container">
+                <img src="https://static.thcdn.com/images/medium/webp/widgets/208-us/42/Virtue-071442.jpg" alt="image">
+                <p class="hero-heading">New from VIRTUE®</p>
+                <p class="hero-description">Three pro-curl products to define, hydrate & repair hair.</p>
+            </div>
+            <div class="hero-right-container">
+                <img src="https://static.thcdn.com/images/medium/webp/widgets/208-us/59/original-Makeup_%281%29-021059.jpg"
+                    alt="image">
+                <p class="hero-heading">Makeup Meets Skin Casre</p>
+                <p class="hero-description">Do not let your skin care stop at your foundation.</p>
+            </div>
+        </div>
+    </section>
+    <!---------- 2 image hero section ends here---------->
+
+    <!-----------video dsiplay section starts here------->
+    <section class="video-display">
+        <div class="video-container">
+            <video controls poster="https://s1.thcdn.com/widgets/208-us/24/MyDermstoreGlow_with_Cynthia-103124.jpg">
+                <source src="https://s1.thcdn.com/productvideo/0/DS_60_FINAL_10mb.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <!-----------video dsiplay section ends here--------->
+
+    <!-----------about and info section starts here------>
+    <div class="about-container">
+        <p class="about-heading">#MyDermstoreGlow</p>
+        <p class="about-description">We care about what goes on your skin, because of what iss within. Our assortment is
+            top-rated, curated & authenticated—bringing you the highest quality products and straight-from-the-experts
+            info to help you navigate all things beauty and skin care. Join the conversation on Instagram with
+            #MyDermstoreGlow—show us your favorite #Dermstore finds that help you care for the skin you’re in! Wee are
+            excited to feature our communitys must-haves all season long.</p>
+    </div>
+    <!-----------about and info section ends here--------->
+
+
+    <!-----------Shop by Category Section starts here----->
+    <section class="shop-by-category">
+        <p>Shop By Category</p>
+        <div class="shop-category-container">
+            <div class="category-item">CLEANSERS</div>
+            <div class="category-item">SUNSCREEN</div>
+            <div class="category-item">FACE MASKS</div>
+            <div class="category-item">SKIN CARE</div>
+            <div class="category-item">HAIR CARE</div>
+            <div class="category-item">EYE CREAM</div>
+            <div class="category-item">MAKEUP</div>
+            <div class="category-item">MOISTURIZERS</div>
+        </div>
+    </section>
+    <!-----------Shop by Category Section ends here----->
+
+    <!-----------Brands Section starts here------------->
+    <section class="brand-showcase">
+        <p>Featured Brands</p>
+        <div class="brand-container">
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/14/original-obagi_logo-105214.png"
+                alt="image">
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/59/Skinc-014559.jpg" alt="image">
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/34/Untitled_design_%2811%29-033834.png"
+                alt="image">
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/33/Untitled_design_%2814%29-033933.png"
+                alt="image">
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/08/SkinMedica-014608.jpg" alt="image">
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/43/oribe-105343.png" alt="image">
+        </div>
+    </section>
+    <!-----------Brands Section ends here---------------->
+
+    <!--------------Post caroucel starts here------------>
+    <section class="seasonal-moisturizers-post-slider">
+        <p style="text-align: center; margin: 1em; font-size: 1.5em; font-family:Poly Regular,Times New Roman,serif;">
+            Seasonal Moisturizers and Hydrators</p>
+        <div class="container2"></div>
+    </section>
+    <!--------------Post caroucel ends here-------------->
+
+    <!--------------Post caroucel starts here------------>
+    <section class="new-arrivals-post-slider">
+        <p style="text-align: center; margin: 1em; font-size: 1.5em; font-family:Poly Regular,Times New Roman,serif;">
+            New Arrivals</p>
+        <div class="container3">
+        </div>
+    </section>
+    <!--------------Post caroucel ends here-------------->
+
+    <!-------------footer section starts here------------>
+    <footer>
+        <div class="upper-footer-section">
+            <div class="newsletter">
+                <p>Sign up to our newsletters and receive the latest exclusive discounts and deals</p>
+                <button>SIGN ME UP</button>
+            </div>
+            <div class="social">
+                <p>Connect with us</p>
+                <div class="social-icons">
+                    <img src="https://i.postimg.cc/bSHcgqd7/facebook-logo.png" alt="facebook">
+                    <img src="https://i.postimg.cc/Btx04BNm/twitter.png" alt="twitter">
+                    <img src="https://i.postimg.cc/ppRtT56R/instagram.png" alt="instagram">
+                    <img src="https://i.postimg.cc/kRdPW2MN/youtube.png" alt="youtube">
+                    <img src="https://i.postimg.cc/7GzyC34Y/pinterest.png" alt="pinterest">
+                </div>
+            </div>
+        </div>
+        <div class="middle-footer-section">
+            <div class="customer-service">
+                <ul>
+                    <li>Customer Service</li>
+                    <li>Help Center / FAQs</li>
+                    <li>Returns</li>
+                    <li>Shipping Information</li>
+                    <li>Order Status</li>
+                </ul>
+            </div>
+            <div class="my-account">
+                <ul>
+                    <li>My Account</li>
+                    <li>Manage My Subscriptions</li>
+                    <li>My Rewards</li>
+                    <li>My Favorites</li>
+                    <li>Referrals</li>
+                    <li>Order History</li>
+                </ul>
+            </div>
+            <div class="company">
+                <ul>
+                    <li>Company</li>
+                    <li>About us</li>
+                    <li>Press</li>
+                    <li>What is Klarna?</li>
+                </ul>
+            </div>
+            <div class="legal">
+                <ul>
+                    <li>Legal</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                    <li>Modern Slavery Statement</li>
+                    <li>Product Recall</li>
+                    <li>Accessibility</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-end-section">
+            <h1>THG</h1>
+            <P>2022 © The Hut.com Ltd.</P>
+        </div>
+    </footer>
+    <!-------------footer section ends here------------>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+
+    <script type="text/javascript" src="./js/navbar.js"></script>
+    <script type="text/javascript" src="./js/home.js"></script>
+</body>
+
+</html>
+
+<script>
+
+    function mapping_data(mensdata) {
+        mensdata.map(function (elm) {
+            var div = document.createElement("div");
+            div.setAttribute("class", "product_div");
+            var image = document.createElement("img");
+            image.setAttribute("src", elm.image);
+            image.setAttribute("width", "100%");
+            image.setAttribute("height", "70%");
+            var name = document.createElement("p")
+            name.textContent = elm.product_name;
+            var rating = document.createElement("p")
+            rating.textContent = elm.rating + " " + elm.review;
+
+            rating.setAttribute("class", "bold")
+
+            var price = document.createElement("p")
+            price.textContent = "$" + elm.price;
+            price.setAttribute("id", "price");
+            price.setAttribute("class", "bold")
+
+            id_value = elm.product_name
+            var btn = document.createElement("button");
+            btn.textContent = "QUICK BUY";
+            btn.setAttribute("id", id_value);
+            btn.addEventListener("click", add_to_cart);
+
+            div.append(image, name, rating, price, btn);
+            document.querySelector(".container1").append(div);
+        })
+    }
+
+
+
+    var mensdata =
+        [
+            {
+                product_id: 1,
+                image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12902086-8334900276405272.jpg",
+                product_name: "Grown Alchemist Body Cleanser - Chamomile Bergamot Rosewood (16.9 fl. oz.)",
+                rating: "★★★★★",
+                review: 33,
+                price: 44.00
+            },
+            {
+                product_id: 2,
+                image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12902393-4844866433148193.jpg",
+                product_name: "COOLA Mineral Body Sunscreen Lotion SPF 50 - Fragrance-Free (5 oz.)",
+                rating: "★★★★☆",
+                review: 15,
+                price: 32.00
+            },
+            {
+                product_id: 3,
+                image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12901984-1484867641166875.jpg",
+                product_name: "Baby Foot Baby Foot for Men (1 pair)",
+                rating: "★★★★★☆",
+                review: 22,
+                price: 25.00
+            },
+            {
+                product_id: 4,
+                image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/13347876-2084898463080388.jpg",
+                product_name: "The Nue Co. Forest Lungs (50 ml.)",
+                rating: "★★★★★",
+                review: 1,
+                price: 95.00
+            },
+            {
+                product_id: 5,
+                image: "https://static.thcdn.com/images/large/webp/productimg/1600/1600/11151046-1604459954827207.jpg",
+                product_name: "ELEMIS Pro-Collagen Marine Cream for Men (1 fl. oz.)",
+                rating: "★★★★★",
+                review: 5,
+                price: 80.00
+            },
+            {
+                product_id: 6,
+                image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/13126460-1984871741993028.jpg",
+                product_name: "Neocutis Bio Gel Firm (1.7 fl. oz.)",
+                rating: "★★★★★",
+                review: 2,
+                price: 197
+            },
+            {
+                product_id: 7,
+                image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12902089-1394900276634007.jpg",
+                product_name: "Grown Alchemist Hand Wash - Sweet Orange Cedarwood Sage (16.9 fl. oz.)",
+                rating: "★★★★☆",
+                review: 19,
+                price: 37.00
+            },
+            {
+                product_id: 8,
+                image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/13129131-2104866309791076.jpg",
+                product_name: "Allies of Skin Multi Acids Retinoid Brightening Sleeping Facial 50 ml.",
+                rating: "★★★★☆",
+                review: 2,
+                price: 92.00
+            },
+            {
+                product_id: 9,
+                image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12901324-1244871071940835.jpg",
+                product_name: "Anthony Ingrown Hair Treatment (3 fl. oz.)",
+                rating: "★★★★☆",
+                review: 10,
+                price: 34.00
+            },
+            {
+                product_id: 10,
+                image: "https://static.thcdn.com/images/small/webp//productimg/original/12902324-1674866430495044.jpg",
+                product_name: "R+Co TELEVISION Perfect Hair Conditioner (33.8 fl. oz.)",
+                rating: "★★★★★",
+                review: 26,
+                price: 96.00
+            },
+            {
+                product_id: 11,
+                image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12902140-1414882147735410.jpg",
+                product_name: "Sunday Riley Auto Correct Brightening and Depuffing Eye Contour Cream (0.5 fl. oz.)",
+                rating: "★★★★☆",
+                review: 121,
+                price: 65.00
+            },
+            {
+                product_id: 12,
+                image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12902680-1394866429425778.jpg",
+                product_name: "évolis Professional Prevent Activator (1.7 fl. oz.)",
+                rating: "★★★★★",
+                review: 2,
+                price: 65.00
+            },
+            {
+                product_id: 13,
+                image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12901040-1804882138799538.jpg",
+                product_name: "Sunday Riley TIDAL Brightening Enzyme Water Cream (0.5 fl. oz.)",
+                rating: "★★★★☆",
+                review: 22,
+                price: 58.00
+            },
+            {
+                product_id: 14,
+                image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12915553-5144866562968675.jpg",
+                product_name: "R+Co PARK AVE Blow Out Balm (5 fl. oz.)",
+                rating: "★★★★☆",
+                review: 23,
+                price: 27.00
+            },
+            {
+                product_id: 15,
+                image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/13046271-4694871557973457.jpg",
+                product_name: "Replenix Glycolic Acid Resurfacing Cleanser 6.7 fl. oz.",
+                rating: "★★★★★",
+                review: 1,
+                price: 28.00
+            },
+            {
+                product_id: 16,
+                image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12901170-7284871281715895.jpg",
+                product_name: "Sunday Riley GOOD GENES Glycolic Acid Treatment (1 fl. oz.)",
+                rating: "★★★★★",
+                review: 25,
+                price: 85.00
+            },
+            {
+                product_id: 17,
+                image: "https://static.thcdn.com/images/small/webp//productimg/original/12902323-1464866430426575.jpg",
+                product_name: "R+Co TELEVISION Perfect Hair Shampoo (33.8 fl. oz.)",
+                rating: "★★★★★",
+                review: 24,
+                price: 96.00
+            },
+            {
+                product_id: 18,
+                image: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12901934-9634871817274590.jpg",
+                product_name: "AGENT NATEUR Holi(man) No 5 Deodorant - Unisex (1.7 fl. oz.)",
+                rating: "★★★★☆",
+                review: 16,
+                price: 21.00
+            }
+
+        ];
+
+    mapping_data(mensdata)
+    var cart_data = JSON.parse(localStorage.getItem('Cart')) || []
+
+    //add to cart fuction starts here
+    function add_to_cart(event) {
+        var cart_data = JSON.parse(localStorage.getItem('Cart')) || []
+
+        var productName = event.target.id;
+        var length = cart_data.length;
+        var match = false;
+        for (var i = 0; i < length; i++) {
+            if (cart_data[i].product_name == productName) {
+                cart_data[i].qty++;
+                var match = true;
+                break;
+            }
+        }
+        if (!match) {
+            var obj = {};
+            var previousSibling = event.target.previousElementSibling;
+
+            obj['price'] = previousSibling.textContent.slice(1) * 1;
+            var previousSibling = previousSibling.previousElementSibling;
+            var previousSibling = previousSibling.previousElementSibling;
+            obj['product_name'] = previousSibling.textContent;
+            var previousSibling = previousSibling.previousElementSibling;
+            obj['image'] = previousSibling.src;
+            obj['qty'] = 1;
+            cart_data.push(obj);
+        }
+        console.log(typeof (event.target.previousElementSibling.textContent.slice(1) * 1), obj)
+        localStorage.setItem('Cart', JSON.stringify(cart_data));
+    }
+    // Add to cart fuction ends here
+
+</script>
+
+
+
+<script>
+
+    function mapping_data1(mensdata) {
+        mensdata.map(function (elm) {
+            var div = document.createElement("div");
+            div.setAttribute("class", "product_div");
+            var image = document.createElement("img");
+            image.setAttribute("src", elm.image);
+            image.setAttribute("width", "100%");
+            image.setAttribute("height", "70%");
+            var name = document.createElement("p")
+            name.textContent = elm.product_name;
+            var rating = document.createElement("p")
+            rating.textContent = elm.rating + " " + elm.review;
+
+            rating.setAttribute("class", "bold")
+
+            var price = document.createElement("p")
+            price.textContent = "$" + elm.price;
+            price.setAttribute("id", "price");
+            price.setAttribute("class", "bold")
+
+            id_value = elm.product_name
+            var btn = document.createElement("button");
+            btn.textContent = "QUICK BUY";
+            btn.setAttribute("id", id_value);
+            btn.addEventListener("click", add_to_cart);
+
+            div.append(image, name, rating, price, btn);
+            document.querySelector(".container2").append(div);
+        })
+    }
+
+
+    mapping_data1(mensdata)
+    var cart_data = JSON.parse(localStorage.getItem('Cart')) || []
+    
+    //add to cart fuction starts here
+    function add_to_cart(event) {
+        var cart_data = JSON.parse(localStorage.getItem('Cart')) || []
+
+        var productName = event.target.id;
+        var length = cart_data.length;
+        var match = false;
+        for (var i = 0; i < length; i++) {
+            if (cart_data[i].product_name == productName) {
+                cart_data[i].qty++;
+                var match = true;
+                break;
+            }
+        }
+        if (!match) {
+            var obj = {};
+            var previousSibling = event.target.previousElementSibling;
+
+            obj['price'] = previousSibling.textContent.slice(1) * 1;
+            var previousSibling = previousSibling.previousElementSibling;
+            var previousSibling = previousSibling.previousElementSibling;
+            obj['product_name'] = previousSibling.textContent;
+            var previousSibling = previousSibling.previousElementSibling;
+            obj['image'] = previousSibling.src;
+            obj['qty'] = 1;
+            cart_data.push(obj);
+        }
+        console.log(typeof (event.target.previousElementSibling.textContent.slice(1) * 1), obj)
+        localStorage.setItem('Cart', JSON.stringify(cart_data));
+    }
+    // Add to cart fuction ends here
+
+</script>
+
+
+
+
+<script>
+
+    function mapping_data2(mensdata) {
+        mensdata.map(function (elm) {
+            var div = document.createElement("div");
+            div.setAttribute("class", "product_div");
+            var image = document.createElement("img");
+            image.setAttribute("src", elm.image);
+            image.setAttribute("width", "100%");
+            image.setAttribute("height", "70%");
+            var name = document.createElement("p")
+            name.textContent = elm.product_name;
+            var rating = document.createElement("p")
+            rating.textContent = elm.rating + " " + elm.review;
+
+            rating.setAttribute("class", "bold")
+
+            var price = document.createElement("p")
+            price.textContent = "$" + elm.price;
+            price.setAttribute("id", "price");
+            price.setAttribute("class", "bold")
+
+            id_value = elm.product_name
+            var btn = document.createElement("button");
+            btn.textContent = "QUICK BUY";
+            btn.setAttribute("id", id_value);
+            btn.addEventListener("click", add_to_cart);
+
+            div.append(image, name, rating, price, btn);
+            document.querySelector(".container3").append(div);
+        })
+    }
+
+
+    mapping_data2(mensdata)
+    var cart_data = JSON.parse(localStorage.getItem('Cart')) || []
+
+    //add to cart fuction starts here
+    function add_to_cart(event) {
+        var cart_data = JSON.parse(localStorage.getItem('Cart')) || []
+
+        var productName = event.target.id;
+        var length = cart_data.length;
+        var match = false;
+        for (var i = 0; i < length; i++) {
+            if (cart_data[i].product_name == productName) {
+                cart_data[i].qty++;
+                var match = true;
+                break;
+            }
+        }
+        if (!match) {
+            var obj = {};
+            var previousSibling = event.target.previousElementSibling;
+
+            obj['price'] = previousSibling.textContent.slice(1) * 1;
+            var previousSibling = previousSibling.previousElementSibling;
+            var previousSibling = previousSibling.previousElementSibling;
+            obj['product_name'] = previousSibling.textContent;
+            var previousSibling = previousSibling.previousElementSibling;
+            obj['image'] = previousSibling.src;
+            obj['qty'] = 1;
+            cart_data.push(obj);
+        }
+        console.log(typeof (event.target.previousElementSibling.textContent.slice(1) * 1), obj)
+        localStorage.setItem('Cart', JSON.stringify(cart_data));
+    }
+    // Add to cart fuction ends here
+
+</script>

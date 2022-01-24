@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0px;
+            background-color: #f2f2f2;
+            font-family: CormorantGaramond, "Times New Roman", serif;
+            letter-spacing: normal;
+            line-height: 24px;
+        }
+        .txt1{
+            font-weight: 500;
+            line-height: 1.2;
+            margin-bottom: 40px;
+            font-size:19px;
+            color: rgb(26, 26, 26);
+        }
+        .txt2{
+            font-weight:550;
+            font-size: 15px;
+            font-family: Raleway, Helvetica, Arial, sans-serif;
+            color: rgb(34, 34, 34);
+            margin-top: 30px;
+            margin-bottom: 5px;
+            padding-left: 5px;
+        }
+        .txt3{
+            font-family: Raleway, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 7px;
+            color: rgb(26, 26, 26);
+        }
+        .txt4{
+            font-size: 90%;
+            font-weight: 600;
+            color: rgb(24, 24, 24);
+        }
+        #topbar{
+            height: 82px;
+            padding: 26px;
+            padding-bottom: 28px;
+            display: flex;
+            padding-left: 108px;
+            background-color: white;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            /* border: 1px solid red; */
+        }
+        #imagediv{
+            width:342px;
+            height: 40px;
+            margin-left: 290px;
+            /* border: 1px solid black; */
+        }
+        #image{
+            height: 100%;
+            width: 100%;
+        }
+        #container{
+            /* border:1px solid red; */
+            width:960px;
+            margin:auto;
+            margin-top: 128px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        #left{
+            /* border:1px solid red; */
+            width:64.5%;
+        }
+        #right{
+            /* border:1px solid red; */
+            width:33%;
+        }
+        #right_in{
+            background-color: white;
+        }
+        #country{
+            border:1px solid black;
+            width:93%;
+            height:35px;
+            padding:5px;
+            cursor: not-allowed;
+            color: rgb(58, 58, 58);
+            font-family: Raleway, Helvetica, Arial, sans-serif;
+            font-size: 76%;
+        }
+        #address{
+            width: 100%;
+            padding:24px;
+            background-color: white;
+            border-top: 4px solid black;
+        }
+        #addressManual{
+            cursor:pointer;
+            text-decoration: underline;
+        }
+        .manual{
+            display: none;
+            
+        }
+        .inputbox{
+            width:99%;
+            height:35px;
+            padding:5px;
+            font-size: 75%;
+        }
+        #option{
+            width: 100%;
+            height:151px;
+            background-color: white;
+            margin-top: 32px;
+            padding: 20px;
+        }
+        #optiontxt{
+            color:#0065ad;
+            margin-left: 15px;;
+        }
+        #optionin{
+            display: flex;
+            background-color: #e6f0f8;
+            padding: 10px;
+            border-radius: 3px;
+        }
+        i{
+          color:#0065ad;
+        }
+        #select_payment{
+            width: 100%;
+            background-color: white;
+            margin-top: 32px;
+        }
+        #order_button{
+            width: 100%;
+            height:92px;
+            background-color: white;
+            margin-top: 32px;
+        }
+        #terms{
+            width: 100%;
+            height:48px;
+            padding-left: 40px;
+            padding-right: 40px;
+            margin-top: 14.5px;
+            margin-bottom: 14.5px;
+        }
+        #itemCount{
+            font-family: Raleway, Helvetica, Arial, sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            color: rgb(26, 26, 26);
+        }
+        #item_list{
+            /* border:1px solid black; */
+            width: 98%;
+            margin:auto;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 5px;
+        }
+        
+        .orderSummaryBasketItemContainer{
+            width: 100%;
+            font-family: Raleway, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            color: rgb(26, 26, 26);
+            padding: 0px 20px 10px 20px;
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .busketItemImageDiv{
+            display: flex;
+            flex-direction:column;
+        }
+        .busketItemImage{
+            height: 78px;
+            width: 78px;
+        }
+        .busketItemDetailsDiv{
+            
+            padding-left: 5px;
+        }
+        .busketItemQuantityDiv,.busketItemPrice{
+          font-weight: bold;
+        }
+        #totalPrice{
+            font-family: Raleway, Helvetica, Arial, sans-serif;
+            font-size: 17px;
+            font-weight: 600;
+            color: rgb(73, 73, 73);
+        }
+        #carttotal{
+            /* border:1px solid red; */
+            height: 80px;
+            width:98%;
+            margin: auto;
+            margin-top: 10px;
+            display: flex;
+            padding: 10px;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        #count{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+            /* border:1px solid black; */
+            width:98%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        #select_payment{
+            padding: 20px;
+        }
+        #card{
+            width:90%;
+            height:630px;
+            border:1px solid black;
+            margin: auto;
+            box-shadow: rgb(34 34 34 / 50%) 0px 0px 0px 3px;
+            border-radius: 4px;
+            padding: 20px;
+        }
+        #cardimage{
+            /* border:1px solid red; */
+            width:93%;
+            height:42px;
+            margin:20px;
+            display: flex;
+        }
+        .cardDiv{
+            margin-left: 20px;
+            margin-top: 5px;
+            margin-bottom: 13px;
+        }
+        .checkbox{
+            display: flex;
+            /* border: 1px solid green; */
+            padding: 5px;
+            padding-left: 0px;
+            align-items: center;
+        }
+        .checktxt{
+            margin-left: 10px;
+        }
+        .cardlogo{
+           margin: 5px;; 
+        }
+        .inputbox{
+            width:93%;
+            height:35px;
+        }
+        #month,#year{
+            width:44%;
+            height:35px;
+        }
+        #payment_alt{
+            width:90%;
+            border: 1px solid black;
+            border-radius: 4px;
+            margin: auto;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        .paymentdiv{
+            /* border:1px solid blue; */
+            height:70px;
+            display: flex;
+            border-top: 1px solid rgb(202, 201, 201);
+            border-bottom:1px solid rgb(202, 201, 201);
+            padding: 10px;
+        }
+        .paymentLogo{
+            height:98%;
+            width:92%;
+            /* border:1px solid red; */
+            margin-left: 10px;
+        }
+        .paymentLogo img{
+            height:30%;
+        }
+        #paymentdiv1{
+            margin-top: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        #paymentdiv1 >button{
+            border: 1px solid transparent;
+            background-color: white;
+        }
+        #paymentdiv1 >button>i{
+            color: black;
+        }
+        #collapse{
+            display: none;
+        }
+        #order_button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #button{
+            width:96%;
+            height: 50px;
+            background-color: black;
+            color: white;
+        }
+        span{
+            text-decoration: underline;
+        }
+        @media only screen and (min-width:550px) and (max-width:970px) {
+            #topbar{
+            height: 82px;
+            padding: 26px;
+            padding-bottom: 28px;
+            display: flex;
+            padding-left:0px;
+            background-color: white;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            /* border: 1px solid red; */
+        }
+        #imagediv{
+            width:342px;
+            height: 40px;
+            margin-left: 26%;
+            /* border: 1px solid black; */
+        }
+        #image{
+            height: 100%;
+            width: 100%;
+        }
+            #container{
+            /* border:1px solid red; */
+            width: 90%;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+        #left{
+            /* border:1px solid red; */
+            width:98%;
+            margin-top: 25px;
+        }
+        #right{
+            /* border:1px solid red; */
+            width:98%;
+        }
+        #cardimage{
+            /* border:1px solid red; */
+            width:93%;
+            height:100px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin:5px;
+            display: flex;
+        }
+        #country{
+            /* border:1px solid black; */
+            width:85%;
+            height:35px;
+            padding:5px;
+            cursor: not-allowed;
+            color: rgb(58, 58, 58);
+            font-family: Raleway, Helvetica, Arial, sans-serif;
+            font-size: 76%;
+        }
+        .cardDiv{
+
+            margin-top: 5px;
+            margin-bottom: 13px;
+        }
+        body{
+            margin: 0px;
+            background-color: #f2f2f2;
+            font-family: CormorantGaramond, "Times New Roman", serif;
+            letter-spacing: normal;
+            line-height: 24px;
+        }
+        .txt1{
+            font-weight: 500;
+            line-height: 1.2;
+            margin-bottom: 10px;
+            font-size:19px;
+            color: rgb(26, 26, 26);
+        }
+        .txt2{
+            font-weight:550;
+            font-size: 15px;
+            font-family: Raleway, Helvetica, Arial, sans-serif;
+            color: rgb(34, 34, 34);
+            margin-top: 10px;
+            margin-bottom: 5px;
+            padding-left: 5px;
+        }
+        .txt3{
+            font-family: Raleway, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 7px;
+            color: rgb(26, 26, 26);
+        }
+        .txt4{
+            font-size: 90%;
+            font-weight: 600;
+            color: rgb(24, 24, 24);
+        }
+        #option{
+            width: 100%;
+            background-color: white;
+            margin-top: 5px;
+            padding: 10px;
+        }
+        #optiontxt{
+            color:#0065ad;
+        }
+        #optionin{
+            display: flex;
+            background-color: #e6f0f8;
+            padding: 3px;
+            border-radius: 3px;
+        }
+        #card{
+            width:98%;
+            height:630px;
+            /* border:1px solid black; */
+            margin: auto;
+            box-shadow: rgb(34 34 34 / 50%) 0px 0px 0px 3px;
+            border-radius: 4px;
+            padding: 10px;
+        }
+        #payment_alt{
+            width:98%;
+        }
+
+        .inputbox{
+            width:85%;
+            height:35px;
+            padding:5px;
+            font-size: 75%;
+        }
+        #month,#year{
+            width:39%;
+            height:35px;
+        }
+        #optiontxt{
+            color:#0065ad;
+            margin-left: 15px;;
+        }
+        #optionin{
+            display: flex;
+            background-color: #e6f0f8;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        i{
+          color:#0065ad;
+        }
+        #select_payment{
+            width: 100%;
+            background-color: white;
+            margin-top: 32px;
+        }
+        #order_button{
+            width: 100%;
+            height:92px;
+            background-color: white;
+            margin-top: 32px;
+        }
+        #terms{
+            width: 100%;
+            height:48px;
+            padding-left: 40px;
+            padding-right: 40px;
+            margin-top: 14.5px;
+            margin-bottom: 14.5px;
+        }
+        }
+        @media only screen and (min-width:0px) and (max-width:549px) {
+            #topbar{
+            height: 82px;
+            padding: 26px;
+            padding-bottom: 28px;
+            display: flex;
+            padding-left:0px;
+            background-color: white;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            /* border: 1px solid red; */
+        }
+        #imagediv{
+            width:342px;
+            height: 40px;
+            margin-left: 20%;
+            /* border: 1px solid black; */
+        }
+        #image{
+            height: 100%;
+            width: 100%;
+        }
+            #container{
+            /* border:1px solid red; */
+            width: 90%;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+        #left{
+            /* border:1px solid red; */
+            width:98%;
+            margin-top: 25px;
+        }
+        #right{
+            /* border:1px solid red; */
+            width:98%;
+        }
+        #cardimage{
+            /* border:1px solid red; */
+            width:93%;
+            height:85px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin:15px;
+            display: flex;
+        }
+        #country{
+            border:1px solid black;
+            width:85%;
+            height:35px;
+            padding:5px;
+            cursor: not-allowed;
+            color: rgb(58, 58, 58);
+            font-family: Raleway, Helvetica, Arial, sans-serif;
+            font-size: 76%;
+        }
+        #payment_alt{
+            width:96%;
+            border: 1px solid black;
+            border-radius: 4px;
+            margin: auto;
+            margin-top: 5px;
+            padding: 2px;
+        }
+        .cardDiv{
+
+            margin-top: 5px;
+            margin-bottom: 13px;
+        }
+        body{
+            margin: 0px;
+            background-color: #f2f2f2;
+            font-family: CormorantGaramond, "Times New Roman", serif;
+            letter-spacing: normal;
+            line-height: 24px;
+        }
+        .txt1{
+            font-weight: 500;
+            line-height: 1.2;
+            margin-bottom: 10px;
+            font-size:19px;
+            color: rgb(26, 26, 26);
+        }
+        .txt2{
+            font-weight:550;
+            font-size: 15px;
+            font-family: Raleway, Helvetica, Arial, sans-serif;
+            color: rgb(34, 34, 34);
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding-left: 5px;
+        }
+        .txt3{
+            font-family: Raleway, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 7px;
+            color: rgb(26, 26, 26);
+        }
+        .txt4{
+            font-size: 90%;
+            font-weight: 600;
+            color: rgb(24, 24, 24);
+        }
+        #option{
+            width: 100%;
+            background-color: white;
+            margin-top: 5px;
+            padding: 10px;
+        }
+        #optiontxt{
+            color:#0065ad;
+        }
+        #optionin{
+            display: flex;
+            background-color: #e6f0f8;
+            padding: 3px;
+            border-radius: 3px;
+        }
+        #card{
+            width:98%;
+            height:630px;
+            border:1px solid black;
+            margin: auto;
+            box-shadow: rgb(34 34 34 / 50%) 0px 0px 0px 3px;
+            border-radius: 4px;
+            padding: 10px;
+        }
+        #cardDiv{
+            margin:2px;
+        }
+
+        .inputbox{
+            width:85%;
+            height:25px;
+            padding:2px;
+            font-size: 75%;
+        }
+        #month,#year{
+            width:39%;
+            height:35px;
+        }
+
+        #optiontxt{
+            color:#0065ad;
+            margin-left: 15px;;
+        }
+        #optionin{
+            display: flex;
+            background-color: #e6f0f8;
+            padding: 10px;
+            border-radius: 3px;
+        }
+        i{
+          color:#0065ad;
+        }
+        #select_payment{
+            width: 100%;
+            background-color: white;
+            margin-top: 32px;
+        }
+        #order_button{
+            width: 100%;
+            height:32px;
+            background-color: white;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        #button{
+            height:30px;
+        }
+        #terms{
+            width: 100%;
+            height:48px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-top: 10px;
+            margin-bottom: 14.5px;
+        }
+        #address{
+            width: 100%;
+            padding:24px;
+            padding-left: 18%;
+            background-color: white;
+            border-top: 4px solid black;
+        }
+        #addressManual{
+            cursor:pointer;
+            text-decoration: underline;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div id="topbar"><div id="imagediv"><img id="image" src="https://s1.thcdn.com/enterprise/assets/dermstore-global-a3ce7f42-4a2c-4cc5-ad05-ba594900fa02-logo-default.svg" alt="logo"></div></div> 
+    <div id="container">
+        <div id="left">
+            <div id="address">
+                <p class="txt1">1. Shipping Address</p>
+                <p class="txt2">Country/Region</p>
+                <div id="country"><p>United States</p></div>
+                <p class="txt2">*Full Name</p>
+                <input class="inputbox" id="inputboxName" type="text">
+                <div id="alert_name"></div>
+                <p class="txt2">Address Search</p>
+
+                <input class="inputbox"  type="text" placeholder="Start typing your address...">
+                <p class="txt3" id="addressManual">or Enter Address Manually</p>
+
+                <!-- Manual address part -->
+            <div class="manual">
+                <p class="txt2">Address</p>
+                <input id="inputboxAddress" class="inputbox"type="text">
+                <p class="txt2">Apartment/Suite number</p>
+                <input id="inputboxApartment" class="inputbox" type="text">
+                <p class="txt2">Town/City</p>
+                <input id="inputboxTown" class="inputbox" type="text">
+                <p class="txt2">State</p>
+                <input id="inputboxState" class="inputbox" type="text">
+                <p class="txt2">Zip Code/Postcode</p>
+                <input id="inputboxZip" class="inputbox" type="text">
+            </div>
+                 <!-- Manual address part -->
+
+                <p class="txt2">*Contact Number</p>
+                <input id="inputboxContact" class="inputbox" type="number">
+                <p class="txt3">Why do we need your number?</p>
+                <div id="alert_number"></div>
+            </div>
+
+            <div id="option">      
+                <p class="txt1">2. Select Delivery Option</p>         
+                <div id="optionin"class="txt2"><i class="material-icons">info</i><p id="optiontxt">Please enter your address so we can calculate your delivery options.</p></div>
+            </div>
+
+            <div id="select_payment">
+                <p class="txt1">3. Select Payment Method</p>
+                <div id="card">
+                    <div class="cardDiv"><p>Credit/Debit Card</p></div>
+                    <div id="cardimage">
+                        <img class="cardlogo" src="https://s1.thcdn.com/checkout/resources/images/cf2e4062a4f4eb6eb5acb73d813c5bbe.svg" alt="visa1">
+                        <img class="cardlogo" src="https://s1.thcdn.com/checkout/resources/images/8091fbd8840c3c7425fe88e60e73c6ca.svg" alt="visa2">
+                        <img class="cardlogo" src="https://s1.thcdn.com/checkout/resources/images/f47936329793614e60c8f936b5e2c3ce.svg" alt="master1">
+                        <img class="cardlogo" src="https://s1.thcdn.com/checkout/resources/images/e9818418d455461910873fb6e94fcf31.svg" alt="master2">
+                        <img class="cardlogo" src="https://s1.thcdn.com/checkout/resources/images/3391a68749835e841c34a61f9302fd81.svg" alt="american express">
+                        <img class="cardlogo" src="https://s1.thcdn.com/checkout/resources/images/8ba3dc816042268141a2205e3bfc3971.svg" alt="">
+                        <img class="cardlogo" src="https://s1.thcdn.com/checkout/resources/images/248074ffdeeeaeffed9c5db35f35fe45.svg" alt="">
+                    </div>
+                    <p class="cardDiv txt2">*Card Number</p>
+                    <input id="cardNum"class="cardDiv inputbox" type="number">
+
+                    <p class="cardDiv txt2">*Name on card</p>
+                    <input id="nameOncard" class="cardDiv inputbox" type="text">
+
+                    <p class="cardDiv txt2">Expiry Date</p>
+                    <select class="cardDiv" name="Month" id="month">
+                        <option value="">Month</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <select class="cardDiv" name="Year" id="year">
+                        <option value="">Year</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                    </select>
+                    <p  id="cvv"class="cardDiv txt2">*Security Code (CV2)</p>
+                    <input class="cardDiv inputbox" type="number">
+
+                    <div class="cardDiv checkbox">
+                        <input type="checkbox"><p class="checktxt txt3">Use my shipping address as my cardholder address</p>
+                    </div>
+                    <div class="cardDiv checkbox">
+                        <input type="checkbox"><p class="checktxt txt3">Use a different address</p>
+                    </div>
+                </div>
+                <div id="payment_alt">
+                    <div id="paymentdiv1"class="txt2"><p>Use a different payment method</p><button><i class="material-icons">arrow_drop_down_circle</i></button></div>
+
+                    <!-- collapsable part -->
+                    <div id="collapse">
+                    <div id="sezzle" class="paymentdiv">
+                        <input type="checkbox">
+                        <div class="paymentLogo">
+                        <img src="https://s1.thcdn.com/checkout/resources/images/52c235cfc21b037c320712891df2cffc.svg" alt="">
+                        <p class="txt3">Interest-free | 4 payments of $190.66</p>
+                        </div>
+                    </div>
+
+                    <div id="klarna1" class="paymentdiv">
+                        <input type="checkbox">
+                        <div class="paymentLogo">
+                        <p class="txt4">Pay later in 30 days. No fees.</p>
+                        <img src="https://s1.thcdn.com/checkout/resources/images/5ba5f9cd0c43d9f966774630aa65d7c6.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div id="klarna2" class="paymentdiv">
+                        <input type="checkbox">
+                        <div class="paymentLogo">
+                        <p class="txt4">4 interest-free instalments</p>
+                        <img src="https://s1.thcdn.com/checkout/resources/images/5ba5f9cd0c43d9f966774630aa65d7c6.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div id="afterpay" class="paymentdiv">
+                        <input type="checkbox">
+                        <div class="paymentLogo">
+                        <img src="	https://s1.thcdn.com/checkout/resources/images/959a8e732266683b799128acf46e03fd.svg" alt="">
+                        <p class="txt3">Interest-Free | 4 payments of $190.66</p>
+                        </div>
+                    </div>
+
+                    <div id="gpay" class="paymentdiv">
+                        <input type="checkbox">
+                        <div class="paymentLogo">
+                       <img src="https://s1.thcdn.com/checkout/resources/images/3c5574b5e1fe1470a49f46bc08828ef4.svg" alt="">
+                        </div>
+                    </div>
+                    <div id="paypal" class="paymentdiv"><input type="checkbox">
+                        <div class="paymentLogo">
+                        <img src="https://s1.thcdn.com/checkout/resources/images/6528547f8322e9cf64458725f0a72827.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                    <!-- collapsable part -->
+                </div>
+            </div>
+            <div id="order_button">
+                <button class="txt3" id="button">SUBMIT MY ORDER</button>
+            </div>
+            <div id="terms" class="txt3">
+                <P>By placing this order, you are confirming that you agree to our <span>Terms and Conditions</span> and <span>Privacy Policy</span>.</P>
+            </div>
+        </div>
+        <div id="right">
+            <div id="right_in">
+                <div id="count">
+                    <div class="txt4">Order Summary</div>
+                    <div id="itemCount">map item count</div>
+                </div>
+                <div id="item_list"></div>
+                <div id="carttotal">
+                    <div class="txt4">Total to pay</div>
+                    <div id=totalPrice>map total price</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+/*collapse button*/
+    document.querySelector("#paymentdiv1 >button").addEventListener("click",colapse);
+    function colapse(){
+        document.querySelector("#collapse").style.display="block";
+        document.querySelector("#paymentdiv1 >button").style.display="none";
+    }
+/*collapse button*/
+
+document.getElementById('button').addEventListener('click',success);
+
+function success(){
+    if(document.querySelector("#inputboxName").value!="" && document.querySelector("#inputboxContact").value!="" &&
+    document.querySelector("#inputboxAddress").value!="" && document.querySelector("#inputboxApartment").value!="" &&
+    document.querySelector("#inputboxTown").value!="" && document.querySelector("#inputboxState").value!="" && 
+    document.querySelector("#inputboxZip").value!="" && document.querySelector("#inputboxContact").value!="" &&
+    document.querySelector("#cardNum").value!="" && document.querySelector("#nameOncard").value!="" &&
+    document.querySelector("#month").value!="" && document.querySelector("#year").value!="" ){
+        alert("Order Placed Successfully!");
+        window.location.href="../index.html"
+        localStorage.setItem("Cart", JSON.stringify([]));
+    }
+    else{
+        alert("Please fill all the required information");
+    }
+}
+
+
+document.getElementById('addressManual').addEventListener('click',addressManual);
+function addressManual(){
+    document.querySelector(".manual").style.display='block';
+    document.getElementById('addressManual').style.textDecoration= 'none';
+}
+
+/*cart items  mapping*/
+var cartList=JSON.parse(localStorage.getItem("Cart"));
+
+
+mapItems();
+    function mapItems(){
+         var count=0;
+         var total=0;
+        cartList.map(function(element){
+            var busketItem=document.createElement('div');
+            busketItem.className='orderSummaryBasketItemContainer';
+
+            var busketItemImageDiv=document.createElement('div');
+            busketItemImageDiv.className='busketItemImageDiv';
+            var busketItemDetailsDiv=document.createElement('div');
+            busketItemDetailsDiv.className='busketItemDetailsDiv';
+
+            var busketItemImage=document.createElement('img');
+            busketItemImage.className='busketItemImage';
+            busketItemImage.setAttribute('src',element.image);
+
+            var busketItemTitle=document.createElement('p');
+            busketItemTitle.className='busketItemTitle';
+            busketItemTitle.textContent=element['product_name'];
+            var busketItemQuantityDiv=document.createElement('div');
+            busketItemQuantityDiv.className='busketItemQuantityDiv';
+            busketItemQuantityDiv.textContent='Quantity: '+ element.qty;
+            var busketItemPrice=document.createElement('p');
+            busketItemPrice.className='busketItemPrice';
+            busketItemPrice.textContent='$'+ element['price'];;
+
+            document.getElementById('item_list').append(busketItem);
+            busketItem.append(busketItemImageDiv,busketItemDetailsDiv);
+            busketItemImageDiv.append(busketItemImage);
+            busketItemDetailsDiv.append(busketItemTitle,busketItemQuantityDiv,busketItemPrice);
+
+            count+=element.qty;
+            total+=(element.qty*element.price);
+        });
+        document.getElementById('itemCount').textContent=count+' items';
+        total = JSON.parse(localStorage.getItem("couponTotal"));
+        document.getElementById('totalPrice').textContent='$'+total.toFixed(2);
+    }
+   
+    
+   /*cart items  mapping*/
+    
+</script>
