@@ -1,5 +1,5 @@
 # dermClone
-# Live Url: https://dermclone.netlify.app/
+Live Url: https://dermclone.netlify.app/
 
 This is our clone project of official website of dermstore.com. We have used HTML, CSS and javascript for this project and tried to replicate the UI of the website and also include as many features as we can. 
 
