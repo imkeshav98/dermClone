@@ -16,7 +16,7 @@ This is our clone project of official website of dermstore.com. We have used HTM
 ## ScreenShots:
 ![screenshot](https://i.postimg.cc/DZ98KLyx/dernstore-1.jpg)
 ![screenshot](https://i.postimg.cc/85Jj3tDF/dermstore-2.jpg)
-![screenshot](![alt text](http://url/to/img.png))
+![screenshot](https://i.postimg.cc/cCf61Cv0/dermstore-3.jpg)
 
 #### License
 
